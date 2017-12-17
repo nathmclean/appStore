@@ -52,7 +52,7 @@ func (c* Client) GetTopGrossingApps(genres []string, numberOfApps int) ([]App, e
 	}
 
 	if len(genres) != 0 {
-		for _, app := range topGrossingApps.Feed.Results {
+		for _, app := range topGrossingApps.Feed.Results {£
 			if applyFilter(genres, app) {
 				filteredApps = append(filteredApps, app)
 			}
